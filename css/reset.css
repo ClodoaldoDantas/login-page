@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --purple-500: #7c3aed;
+  --purple-400: #9f67ff;
+  --red-500: #ed3a5a;
+  --gray-800: #1e293b;
+  --gray-600: #475569;
+  --gray-400: #94a3b8;
+  --gray-200: #e2e8f0;
+  --gray-50: #f8fafc;
+  --white: #ffffff;
+}
+
+body,
+input,
+button {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.6rem;
+}
+
+body {
+  background-color: var(--gray-50);
+  color: var(--gray-600);
+  line-height: 1.5;
+}
+
+h1,
+label {
+  color: var(--gray-800);
+}
+
+a {
+  text-decoration: none;
+  color: var(--purple-500);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,154 @@
+@import url("reset.css");
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.login {
+  padding: 4rem 11.2rem;
+}
+
+.login > img {
+  margin-bottom: 11.4rem;
+}
+
+.login-header {
+  max-width: 35rem;
+  margin-bottom: 4rem;
+}
+
+.login-header h1 {
+  font-size: 3.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.login-form {
+  max-width: 38.4rem;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.6rem;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.form-label label {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.form-label a {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.form-field {
+  padding: 1.6rem 1.2rem;
+  background-color: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+
+  display: flex;
+  width: 100%;
+}
+
+.form-field:focus-within {
+  border-color: var(--purple-500);
+}
+
+.form-field.invalid {
+  border-color: var(--red-500);
+}
+
+.form-field input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.form-field button {
+  border: 0;
+  font-size: 0;
+  background: transparent;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+  margin-top: 1.6rem;
+
+  background: var(--purple-500);
+  border-radius: 4px;
+  border: 0;
+
+  font-weight: 700;
+  color: var(--white);
+  transition: 200ms;
+}
+
+.btn-primary:hover {
+  background: var(--purple-400);
+}
+
+.register {
+  margin-top: 3.2rem;
+}
+
+.register a {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.error {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 1.4rem;
+  color: var(--red-500);
+}
+
+.banner {
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .app {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .login {
+    padding: 4rem 2.4rem;
+  }
+
+  .login > img {
+    margin-bottom: 6.4rem;
+  }
+
+  .login-header,
+  .login-form {
+    max-width: 40rem;
+  }
+
+  .banner {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .login-header h1 {
+    font-size: 2.8rem;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Bora Codar | Desafio 11</title>
+  </head>
+  <body>
+    <main class="app">
+      <section class="login">
+        <img src="./images/logo.svg" alt="Vertigo" />
+
+        <header class="login-header">
+          <h1>Acesse a plataforma</h1>
+          <p>
+            Faça login ou registre-se para começar a construir seus projetos
+            ainda hoje.
+          </p>
+        </header>
+
+        <form class="login-form" id="signIn">
+          <div class="form-group">
+            <div class="form-label">
+              <label for="email">E-mail</label>
+            </div>
+
+            <div class="form-field">
+              <input type="text" id="email" placeholder="Digite seu e-mail" />
+            </div>
+
+            <span id="emailError" class="error"></span>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label">
+              <label for="password">Senha</label>
+              <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <div class="form-field">
+              <input
+                type="password"
+                id="password"
+                placeholder="Digite sua senha"
+              />
+
+              <button type="button" id="togglePassword">
+                <img src="./images/eye.svg" alt="" />
+              </button>
+            </div>
+
+            <span id="passwordError" class="error"></span>
+          </div>
+
+          <button class="btn-primary" type="submit">Entrar</button>
+
+          <div class="register">
+            Ainda não tem uma conta? <a href="#">Inscreva-se</a>
+          </div>
+        </form>
+      </section>
+
+      <div class="banner"></div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
